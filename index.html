@@ -9,21 +9,32 @@
     <title>chats | Kakao Clone </title>
 </head>
 
-    <div class="status-bar" <div class="status-bar__column"></div>
-    <span class="status-bar__clock">13:54</span>
-    <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-    </div>
+<body>
+    <div class="status-bar">
+        <!-- /상태바를 만든다 -->
+        <div class="status-bar__column"></div>
+        <!-- 상태바의 세로로 끊어 2개를 만든다는 의미 -->
+        <span class="status-bar__clock">13:54</span>
+        <!-- 하나는 좌측 상단 시계 -->
+        <div class="status-bar__column">
+            <!-- 나머지 하나는 우측 상단 이모티콘들 -->
+
+            <i class="far fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <!-- 배터리에 100%라고 표시하기 위해 만든 줄 -->
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
     <header class="header">
+        <!-- 스타투스바 아래에 chat 과 이모티콘들을 만들기위해 header를 썻다 -->
         <div class="header__header-cloumn">
+            <!-- 두가지기 때문에 2개의 컬럼을 만듬 하나는 우측 상단 chat -->
             <h1 class="header__title">Chats</h1>
         </div>
         <div class="header__header-cloumn">
+            <!-- 나머지 한줄은 좌측상단 이모티콘들 -->
 
             <span class="header__icon">
                 <i class="fas fa-search"></i>
@@ -32,7 +43,11 @@
                 <i class="far fa-comment"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-cog"></i>
+                <a href="settings.html">
+
+
+                    <i class="fas fa-cog"></i>
+                </a>
             </span>
         </div>
 
@@ -40,37 +55,64 @@
     </header>
 
     <main class="chats">
-        <ul class="chats__list"></ul>
-        <li class="chats__chat"></li>
-        <div class="chat__column">
-            <img class="chat__avatar g-avatar" src="images/2.jpg">
-            <div class="chat__content">
-                <div class="span chat__username">
-                    lynn
-                </div>
-                <span class="chat__preview">Going Home</span>
-            </div>
+        <!-- 채팅방을 만들기위해 챗이라는 클래스를 만듬 -->
+        <ul class="chats__list">
+            <li class="chats__chat chat">
+                <a href="chat.html">
 
-        </div>
-        <div class="chat__cloumn">
-            <span class="chat__timestamp">Yesterday</span>
-        </div>
+                    <div class="chat__column">
+                        <!-- 카톡 채팅방 왼쪽에는 이름, 최근내용 우측에는 
+                날짜가 적혀져 있기때문에 two column 으로 설정 -->
+                        <!-- .chat__cloumn  누르면 위와같이변함 -->
+                        <!-- 부모 클래스가 수많은 child 클래스를 가질 경우 부모클래스__어쩌고 -->
+                        <!-- 라는것을 계속해서 적을수 없으니 그냥 새로운 이름을 적는게 낫다 -->
+                        <img class="chat__avatar g-avatar" src="images/2.jpg">
+                        <!-- 이미지는 모두 소문자여야 한다. -->
+                        <!-- g-avatar 는 같은사진이 여러번 반복 되어나오기때문에     g avatar를 만듬 -->
+                        <!-- 이 g-avatar는 모든 웹사이트의 모든곳에 영향을 미칠 예쩡. -->
+                        <div class="chat__content">
+                            <!-- 채팅 내용클래스에  -->
+                            <span class="chat__username">
+                                <!-- 유저네임 린  -->
+                                lynn
+                                <i class="fas fa-volume-mute"></i>
+                            </span>
+                            <span class="chat__preview">Going Home</span>
+                        </div>
+
+                    </div>
+                    <div class="chat__cloumn">
+                        <span class="chat__timestamp">Yesterday</span>
+                        <!-- 채팅방 미리보기에서 우측칸 타임스탬프를 만듬 -->
+                    </div>
+
+                </a>
+            </li>
+        </ul>
+
     </main>
     <nav class="nav">
+        <!-- 하단에 버튼 4개를 만들기 위함 -->
         <ul class="nav__list">
+            <!-- 그것은 ul , 리스트 4개를 만든다 친구, 채팅 검색 more 또 누르면 화면이 이동해야한다 -->
             <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
-                    <i class="far fa-user"></i></li></a>
-            </li>
+                    <i class="far fa-user"></i></a></li>
+            <!-- nav list item 값을 가진 li calss에 nav__list-link라는 클래스인 하이퍼링크 a가 들어간다 -->
+            <!-- li.nav__list-itme*4>a.nav__list-linkc -->
+            <!-- 첫번쨰는 친구이모티콘그리고 friends.html로 하이퍼링크 -->
             <li class="nav__list-item"><a href="index.html" class="nav__list-link">
                     <i class="fas fa-comment"></i></a>
+                <!-- 두번째는 인덱스html 로 하이퍼링크 -->
             </li>
             <li class="nav__list-item"><a href="Find.html" class="nav__list-link">
 
                     <i class="fas fa-search"></i></a>
+                <!-- 세번쨰는 find.html 로 하이퍼링크 -->
 
             </li>
             <li class="nav__list-item"><a href="More.html" class="nav__list-link">
                     <i class="fas fa-ellipsis-h"></i></a>
+                <!-- 네번쨰 모어 html로 하이퍼링크 -->
             </li>
         </ul>
 

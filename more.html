@@ -19,13 +19,12 @@
         <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
     </div>
-    </div>
+
     <header class="header">
         <div class="header__header-cloumn">
             <h1 class="header__title">More</h1>
         </div>
         <div class="header__header-cloumn">
-
             <span class="header__icon">
                 <i class="fas fa-search"></i>
             </span>
@@ -33,27 +32,114 @@
                 <i class="fas fa-qrcode"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-cog"></i>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                </a>
             </span>
         </div>
-
-
     </header>
+    <main class="more">
+        <header class="more__header">
+            <div class="friends__friend friend friend--lg">
+                <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
+                <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
+                <div class="friends__column">
+                    <img src="images/2.jpg" class="g-avatar friends__avatar">
+                    <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
+                    <div class="friend__content">
+                        <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
+                        <span class="friend__name">
+                            <!-- 이름  -->
+                            taeyeon JANG
+                        </span>
+                        <span class="friend__status">
+                            <!-- 상메 ㄹㅇㅋㅋ -->
+                            wxd8339@naver.com
+                        </span>
+                    </div>
+                </div>
+                <div class="friend__cloumn">
+                    <div class="friend__comment"></div>
+                    <span>
+                        <i class="far fa-comment-alt fa-2x"></i>
+                    </span>
+                </div>
+            </div>
+
+            <ul class="more__btn-list">
+                <li class="more__btn">
+                    <span class="mor__btn-icon">
+                        <i class="far fa-smile fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Emoticons
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="mor__btn-icon">
+                        <i class="fas fa-brush fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Themes
+                    </span></li>
+                <li class="more__btn">
+                    <span class="mor__btn-icon">
+                        <i class="fab fa-kickstarter-k fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Account
+                    </span>
+                </li>
+            </ul>
+        </header>
+        <section class="more__suggestions">
+            <h5 class="more__title">Suggestions</h5>
+            <ul class="more__suggestions-list">
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">KaKao Story</span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-beer fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">KaKao friends</span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-gamepad fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">friends Gem</span>
+                </li>
+
+
+            </ul>
+        </section>
+    </main>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
-                    <i class="fas fa-user"></i></li></a>
+            <li class="nav__list-item">
+                <a href="friends.html" class="nav__list-link">
+                    <i class="far fa-user"></i>
+                </a>
+
             </li>
-            <li class="nav__list-item"><a href="index.html" class="nav__list-link">
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
                     <i class="far fa-comment"></i></a>
             </li>
-            <li class="nav__list-item"><a href="Find.html" class="nav__list-link">
-
-                    <i class="fas fa-search"></i></a>
+            <li class="nav__list-item">
+                <a href="Find.html" class="nav__list-link">
+                </a>
+                <i class="fas fa-search"></i>
 
             </li>
-            <li class="nav__list-item"><a href="More.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i></a>
+            <li class="nav__list-item">
+                <a href="More.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
             </li>
         </ul>
 

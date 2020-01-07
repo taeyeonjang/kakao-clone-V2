@@ -10,15 +10,16 @@
 </head>
 
 <body>
-    <div class="status-bar" <div class="status-bar__column"></div>
-    <span class="status-bar__clock">13:54</span>
-    <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-    </div>
+    <div class="status-bar">
+        <div class="status-bar__column"></div>
+        <span class="status-bar__clock">13:54</span>
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
     <header class="header">
         <div class="header__header-cloumn">
@@ -30,12 +31,97 @@
                 <i class="fas fa-search"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-cog"></i>
+                <a href="settings.html">
+
+                    <i class="fas fa-cog"></i>
+                </a>
             </span>
         </div>
 
 
     </header>
+    <main class="friends">
+        <!-- 친구 클래스를 만듬 -->
+        <header class="friends__header">
+            <div class="friends__friend friend friend--lg">
+                <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
+                <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
+                <div class="friends__column">
+                    <img src="images/2.jpg" class="g-avatar friends__avatar">
+                    <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
+                    <div class="friend__content">
+                        <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
+                        <span class="friend__name">
+                            <!-- 이름  -->
+                            Taeyeon Jang
+                        </span>
+                        <span class="friend__status">
+                            <!-- 상메 ㄹㅇㅋㅋ -->
+                            ㄹㅇㅋㅋ
+                        </span>
+                    </div>
+
+
+                </div>
+
+
+                <div class="friends__plus">
+                    <h5 class="friends__tiltle">Plus friends</h5>
+                    <div class="friends__friend friend">
+
+                        <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
+                        <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
+                        <div class="friends__column">
+                            <img src="images/2.jpg" class="g-avatar friends__avatar">
+                            <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
+                            <div class="friend__content">
+                                <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
+                                <span class="friend__name">
+                                    <!-- 이름  -->
+                                    Plus friend
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <ul class="friends__list">
+                        <!-- 친구목록 ul 클래스 -->
+                        <h5 class="friends__title">Friends 14</h5>
+
+                        <li class="friends__friend friend friend--lg">
+                            <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
+                            <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
+                            <div class="friends__column">
+                                <img src="images/2.jpg" class="g-avatar friends__avatar">
+                                <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
+                                <div class="friend__content">
+                                    <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
+                                    <span class="friend__name">
+                                        <!-- 이름  -->
+                                        나머지 친구들
+                                    </span>
+                                    <span class="friend__status">
+                                        <!-- 상메 ㄹㅇㅋㅋ -->
+                                        ㄹㅇㅋㅋ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="friend__cloumn">
+                                <div class="friend__now-listening">
+                                    <span>
+
+
+                                        Gathering my Tears (tyJANG)
+                                        <i class="fas fa-play"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+    </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
