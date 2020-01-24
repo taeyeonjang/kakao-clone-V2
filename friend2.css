@@ -1,0 +1,7 @@
+.friend {
+  display: flex;
+
+  background-color: red;
+  justify-content: space-between;
+  align-items: center;
+}
