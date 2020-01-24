@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .nav {
   position: fixed;
   width: 100%;
@@ -50,3 +51,47 @@
   animation: showNavBar 0.5s ease-out forwards;
   animation-delay: 0.5s;
 }
+=======
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fcfcfc;
+    padding: 20px 50px;
+   bottom: 0px;
+    left: 0px;
+    border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav i{
+    font-size: 20px;
+}
+
+.nav .nav__list-link{
+    position: relative;
+
+}
+ /* 아이콘에 글씨를 덫붙이고싶다면 원래 아이콘에는 position: relative를 줘야 같은곳에 위치하고 */
+ /* 겹치고싶다면 겹치는 곳 css에 position: absolute를 하니깐 겹쳐졌다! */
+.nav .nav__badge{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 15px;
+
+    color: white;
+    background-color: #dc5d46;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    
+}
+>>>>>>> Stashed changes

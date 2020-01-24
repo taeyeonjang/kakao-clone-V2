@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5dbae50064.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>chats | Kakao Clone </title>
+</head>
+
+
+<body>
+    <div class="status-bar">
+        <!-- /상태바를 만든다 -->
+        <div class="status-bar__column">
+            <!-- 상태바의 세로로 끊어 2개를 만든다는 의미 -->
+            <span class="status-bar__clock">13:54</span>
+        </div>
+        <!-- 하나는 좌측 상단 시계 -->
+        <div class="status-bar__column">
+            <!-- 나머지 하나는 우측 상단 이모티콘들 -->
+
+            <i class="far fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <!-- 배터리에 100%라고 표시하기 위해 만든 줄 -->
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <header class="header">
+        <!-- 스타투스바 아래에 chat 과 이모티콘들을 만들기위해 header를 썻다 -->
+        <div class="header__header-cloumn">
+            <!-- 두가지기 때문에 2개의 컬럼을 만듬 하나는 우측 상단 chat -->
+            <h1 class="header__title">Chats</h1>
+        </div>
+        <div class="header__header-cloumn">
+            <!-- 나머지 한줄은 좌측상단 이모티콘들 -->
+
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+                <i class="far fa-comment"></i>
+            </span>
+            <span class="header__icon">
+                <a href="settings.html">
+
+
+                    <i class="fas fa-cog"></i>
+                </a>
+            </span>
+        </div>
+
+
+    </header>
+
+    <main class="chats">
+        <!-- 채팅방을 만들기위해 챗이라는 클래스를 만듬 -->
+        <ul class="chats__list">
+            <li class="chats__chat chat">
+                <a href="chats.html">
+                    <div class="chats__chat friend friend--lg">
+                        <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
+                        <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
+                        <div class="friend__column">
+                            <img src="images/송지원.jpg" class="m-avatar friend__avatar">
+                            <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
+                            <div class="friend__content">
+                                <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
+                                <span class="friend__name">
+                                    <!-- 이름  -->
+                                    송지원
+                                </span>
+                                <span class="friend__bottom-text">
+                                    초조해
+                                </span>
+                            </div>
+                        </div>
+                        <div class="friend__cloumn">
+                            <sapn class="chat__timestamp">
+                                March 8
+                            </sapn>
+
+                        </div>
+                    </div>
+
+
+
+                </a>
+
+
+            </li>
+        </ul>
+
+    </main>
+    <nav class="nav">
+        <!-- 하단에 버튼 4개를 만들기 위함 -->
+        <ul class="nav__list">
+            <!-- 그것은 ul , 리스트 4개를 만든다 친구, 채팅 검색 more 또 누르면 화면이 이동해야한다 -->
+            <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
+                    <i class="far fa-user"></i></a></li>
+            <!-- nav list item 값을 가진 li calss에 nav__list-link라는 클래스인 하이퍼링크 a가 들어간다 -->
+            <!-- li.nav__list-itme*4>a.nav__list-linkc -->
+            <!-- 첫번쨰는 친구이모티콘그리고 friends.html로 하이퍼링크 -->
+            <li class="nav__list-item"><a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
+                    <i class="fas fa-comment"></i>
+                </a>
+                <!-- 두번째는 인덱스html 로 하이퍼링크 -->
+            </li>
+            <li class="nav__list-item"><a href="Find.html" class="nav__list-link">
+
+                    <i class="fas fa-search"></i></a>
+                <!-- 세번쨰는 find.html 로 하이퍼링크 -->
+
+            </li>
+            <li class="nav__list-item"><a href="More.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i></a>
+                <!-- 네번쨰 모어 html로 하이퍼링크 -->
+            </li>
+        </ul>
+
+    </nav>
+    <div class="bigscreen"></div>
+
+
+    <span class="bigscreen__text">Please make your screen small! </span>
+
+
+</body>
+
+</html>

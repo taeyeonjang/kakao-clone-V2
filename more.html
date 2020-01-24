@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/5dbae50064.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title> More | Kakao Clone </title>
 </head>
 
 <body>
-    <div class="status-bar" <div class="status-bar__column"></div>
-    <span class="status-bar__clock">13:54</span>
-    <div class="status-bar__column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__clock">13:54</span>
+        </div>
+
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
 
     <header class="header">
@@ -37,14 +42,16 @@
                 </a>
             </span>
         </div>
+
+
     </header>
     <main class="more">
         <header class="more__header">
             <div class="friends__friend friend friend--lg">
                 <!-- div나 li나 클래스명이 같다면 상관없다는 걸 볼 수 있을것이다 나중에 -->
                 <!-- 친구들사진중 내꺼는 사진이 약간 커서 약간큰 내꺼 사진 클래스 입력 -->
-                <div class="friends__column">
-                    <img src="images/2.jpg" class="g-avatar friends__avatar">
+                <div class="friend__column">
+                    <img src="images/2.jpg" class="g-avatar friend__avatar">
                     <!-- 이미지를 불러왔고 그 이미지 클래스명을 입력 -->
                     <div class="friend__content">
                         <!-- 이름과, 상메가 표시되는 클래스를 입력 -->
@@ -128,13 +135,15 @@
             </li>
             <li class="nav__list-item">
                 <a href="index.html" class="nav__list-link">
-                    <i class="far fa-comment"></i></a>
+                    <div class="nav__badge">8</div>
+                    <i class="far fa-comment"></i>
+                </a>
             </li>
             <li class="nav__list-item">
                 <a href="Find.html" class="nav__list-link">
-                </a>
-                <i class="fas fa-search"></i>
 
+                    <i class="fas fa-search"></i>
+                </a>
             </li>
             <li class="nav__list-item">
                 <a href="More.html" class="nav__list-link">
@@ -144,6 +153,11 @@
         </ul>
 
     </nav>
+    <div class="bigscreen">
+
+
+        <span class="bigscreen__text">Please make your screen small! </span>
+    </div>
 
 
 
